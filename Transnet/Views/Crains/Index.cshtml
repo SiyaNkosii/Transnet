@@ -1,0 +1,133 @@
+﻿@model IEnumerable<Transnet.Models.Crains>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>This are the results:</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.strtDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Days)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShiftonHd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShiftphrHD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noDaysPD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noHoursPD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShiftonEx)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShifpHrEx)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noDaysEx)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noHoursEx)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShiftonWk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noShiftpHrWk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noDaysonWk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.noHoursonWk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoCrains)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totTimepC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.strtDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Days)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShiftonHd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShiftphrHD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noDaysPD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noHoursPD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShiftonEx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShifpHrEx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noDaysEx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noHoursEx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShiftonWk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noShiftpHrWk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noDaysonWk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.noHoursonWk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoCrains)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totTimepC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CrainId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CrainId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CrainId })
+        </td>
+    </tr>
+}
+
+</table>

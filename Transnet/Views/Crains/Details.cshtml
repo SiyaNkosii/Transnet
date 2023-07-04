@@ -1,0 +1,162 @@
+﻿@model Transnet.Models.Crains
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Crains</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.strtDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strtDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Days)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShiftonHd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShiftonHd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShiftphrHD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShiftphrHD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noDaysPD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noDaysPD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noHoursPD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noHoursPD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShiftonEx)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShiftonEx)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShifpHrEx)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShifpHrEx)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noDaysEx)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noDaysEx)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noHoursEx)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noHoursEx)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShiftonWk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShiftonWk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noShiftpHrWk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noShiftpHrWk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noDaysonWk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noDaysonWk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noHoursonWk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noHoursonWk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoCrains)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoCrains)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totTimepC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totTimepC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CrainId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
